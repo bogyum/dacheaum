@@ -76,6 +76,28 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#667eea" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  const theme = localStorage.getItem('theme');
+                  const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                  const shouldBeDark = theme ? theme === 'dark' : systemTheme;
+                  
+                  if (shouldBeDark) {
+                    document.documentElement.classList.add('dark');
+                  } else {
+                    document.documentElement.classList.remove('dark');
+                  }
+                } catch (e) {
+                  // localStorage 접근 실패 시 기본값 사용
+                  document.documentElement.classList.remove('dark');
+                }
+              })();
+            `,
+          }}
+        />
       </head>
       <body className={`${inter.className} antialiased`}>
         {children}
