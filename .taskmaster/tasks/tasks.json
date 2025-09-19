@@ -1,0 +1,118 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Initialize Next.js 14+ Project with TypeScript",
+        "description": "Set up the project repository using Next.js 14+ with App Router, TypeScript, ESLint, and Tailwind CSS.",
+        "details": "Use `npx create-next-app@latest` with TypeScript and ESLint options enabled. Install Tailwind CSS (`^3.4.1`) following official setup. Ensure project structure follows Next.js 14 App Router conventions. Configure Prettier for code formatting. Add React Icons (`^4.12.0`) and Framer Motion (`^10.16.4`).",
+        "testStrategy": "Verify successful build and dev server start. Check for correct TypeScript, ESLint, and Tailwind integration. Run lint and format checks.",
+        "priority": "high",
+        "dependencies": [],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 2,
+        "title": "Implement Responsive Layout and Core Routing",
+        "description": "Develop the responsive layout and routing structure for all device types using Next.js App Router and Tailwind CSS.",
+        "details": "Create layout components in `/app` directory. Use Tailwind's responsive utilities (`sm`, `md`, `lg`, `xl`) and CSS grid/flexbox. Ensure mobile-first design. Set up main navigation and page routes per PRD sections. Use Next.js Link for navigation. Optimize for accessibility (ARIA roles, semantic HTML).",
+        "testStrategy": "Test layout on Chrome, Safari, Firefox across mobile, tablet, desktop. Use Lighthouse and axe-core for accessibility and responsiveness validation.",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 3,
+        "title": "Develop Content Sections and Data Model",
+        "description": "Build all required content sections: 주제와 필요성, 학교별 활용 사례, 실천 방안, 기능 개선 제언, 일반화 및 발전 방향.",
+        "details": "Define TypeScript interfaces for each content type. Store static content in JSON or MDX files for easy updates. Render sections using server/client components as appropriate. Ensure content is structured for accessibility and SEO (use headings, landmarks).",
+        "testStrategy": "Unit test rendering of each section. Validate content structure with screen readers and SEO tools.",
+        "priority": "high",
+        "dependencies": [
+          2
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 4,
+        "title": "Create Interactive School Case Cards",
+        "description": "Implement school case cards with hover, click, and scroll-based animations using Framer Motion.",
+        "details": "Design card components for each school. Use Framer Motion for hover/click/scroll animations. Ensure smooth transitions and performance. Cards should be touch-friendly and accessible. Use React Icons for visual cues.",
+        "testStrategy": "Test card interactions on touch and mouse devices. Profile animation performance with Chrome DevTools. Validate accessibility with keyboard navigation.",
+        "priority": "high",
+        "dependencies": [
+          3
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 5,
+        "title": "Integrate Data Visualization Components",
+        "description": "Add charts and graphs for data visualization using a modern React chart library.",
+        "details": "Use `react-chartjs-2` (`^5.2.0`) or `recharts` (`^2.7.2`) for charts. Create reusable chart components for relevant data. Ensure charts are responsive and accessible (ARIA labels, keyboard navigation). Optimize for fast rendering and minimal bundle size.",
+        "testStrategy": "Render charts with sample data. Test responsiveness and accessibility. Use Lighthouse to check performance impact.",
+        "priority": "medium",
+        "dependencies": [
+          3
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 6,
+        "title": "Optimize Performance and Loading Speed",
+        "description": "Ensure page loads within 3 seconds and animations are smooth across devices.",
+        "details": "Implement Next.js image optimization (`next/image`). Use code splitting and lazy loading for heavy components. Minify CSS/JS. Use server-side rendering (SSR) for initial load. Profile bundle size and loading times with Web Vitals and Lighthouse.",
+        "testStrategy": "Measure page load time on mobile and desktop using WebPageTest and Lighthouse. Validate animation smoothness with Chrome DevTools.",
+        "priority": "high",
+        "dependencies": [
+          4,
+          5
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 7,
+        "title": "Accessibility and Usability Enhancements",
+        "description": "Ensure the UI/UX meets accessibility standards and is intuitive for educational use.",
+        "details": "Apply WCAG 2.1 AA guidelines. Use semantic HTML, ARIA attributes, and keyboard navigation. Test with screen readers (NVDA, VoiceOver). Provide clear visual focus states. Add tooltips and alt text for icons/images. Validate usability for target users (teachers, admins).",
+        "testStrategy": "Run axe-core and Lighthouse accessibility audits. Conduct manual screen reader and keyboard navigation tests. Gather feedback from sample users.",
+        "priority": "high",
+        "dependencies": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 8,
+        "title": "Final QA, Documentation, and Deployment",
+        "description": "Perform final quality assurance, write user/developer documentation, and deploy to production.",
+        "details": "Conduct end-to-end testing (Cypress `^13.7.0`). Write README and usage docs. Prepare deployment scripts for Vercel (recommended for Next.js). Set up environment variables and production build. Monitor post-deployment performance and error logs.",
+        "testStrategy": "Run full E2E test suite. Validate deployment on Vercel. Review documentation for completeness and clarity.",
+        "priority": "medium",
+        "dependencies": [
+          6,
+          7
+        ],
+        "status": "pending",
+        "subtasks": []
+      }
+    ],
+    "metadata": {
+      "created": "2025-09-19T10:08:42.132Z",
+      "updated": "2025-09-19T10:08:42.132Z",
+      "description": "Tasks for master context"
+    }
+  }
+}
