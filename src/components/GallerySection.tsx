@@ -1,13 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ImageIcon, Eye, Download } from 'lucide-react';
+import { Eye, Download } from 'lucide-react';
 import { useState } from 'react';
 
 export default function GallerySection() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  // 갤러리 이미지 데이터 (나중에 실제 이미지로 교체)
+  // 갤러리 이미지 데이터
   const galleryImages = [
     {
       id: 1,
@@ -22,6 +22,62 @@ export default function GallerySection() {
       alt: '다채움 활용 사례 2',
       title: '학생 참여 활동',
       description: '학생들이 적극적으로 참여하는 수업 현장'
+    },
+    {
+      id: 3,
+      src: '/exmp/okcheon_1.png',
+      alt: '옥천 활용 사례 1',
+      title: '옥천 지역 활용 사례',
+      description: '옥천 지역에서의 다채움 플랫폼 활용 모습'
+    },
+    {
+      id: 4,
+      src: '/exmp/okcheon_2.png',
+      alt: '옥천 활용 사례 2',
+      title: '옥천 수업 현장',
+      description: '옥천 지역 학교에서의 실제 수업 활용'
+    },
+    {
+      id: 5,
+      src: '/exmp/okcheon_3.png',
+      alt: '옥천 활용 사례 3',
+      title: '옥천 학생 참여',
+      description: '옥천 지역 학생들의 적극적인 참여 모습'
+    },
+    {
+      id: 6,
+      src: '/exmp/okcheon_4.png',
+      alt: '옥천 활용 사례 4',
+      title: '옥천 교육 혁신',
+      description: '옥천 지역의 교육 혁신 사례'
+    },
+    {
+      id: 7,
+      src: '/exmp/okcheon_5.png',
+      alt: '옥천 활용 사례 5',
+      title: '옥천 성과 공유',
+      description: '옥천 지역의 성과 공유 및 발표'
+    },
+    {
+      id: 8,
+      src: '/exmp/semeong_1.png',
+      alt: '세명 활용 사례 1',
+      title: '세명 지역 활용',
+      description: '세명 지역에서의 다채움 플랫폼 활용'
+    },
+    {
+      id: 9,
+      src: '/exmp/semeong_2.png',
+      alt: '세명 활용 사례 2',
+      title: '세명 수업 모습',
+      description: '세명 지역 학교의 수업 현장'
+    },
+    {
+      id: 10,
+      src: '/exmp/semeong_3.png',
+      alt: '세명 활용 사례 3',
+      title: '세명 교육 성과',
+      description: '세명 지역의 교육 성과 및 결과'
     }
   ];
 
@@ -91,24 +147,6 @@ export default function GallerySection() {
           ))}
         </div>
 
-        {/* 빈 갤러리 슬롯들 (추가 이미지를 위한 플레이스홀더) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-          {[3, 4, 5].map((index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: (index + 2) * 0.1 }}
-              className="group relative overflow-hidden rounded-lg shadow-lg bg-gray-200 dark:bg-gray-700 aspect-w-16 aspect-h-12 flex items-center justify-center"
-            >
-              <div className="text-center">
-                <ImageIcon className="w-12 h-12 text-gray-400 mx-auto mb-2" />
-                <p className="text-gray-500 dark:text-gray-400 text-sm">이미지 추가 예정</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
       </div>
 
       {/* 모달 */}
