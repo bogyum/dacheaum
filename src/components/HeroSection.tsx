@@ -13,12 +13,12 @@ export default function HeroSection() {
       style={{
         backgroundImage: 'url(/imgfile/IMG_6947.JPG)',
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: 'center top 20%',
         backgroundRepeat: 'no-repeat'
       }}
     >
       {/* Background Overlay */}
-      <div className="absolute inset-0 bg-black/40 dark:bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/30 dark:bg-black/30"></div>
       
       <div className="relative z-10 max-w-7xl mx-auto text-center">
         <motion.h1 
