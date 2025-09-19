@@ -17,7 +17,7 @@ export default function Footer() {
             디지털 전환 시대의 교육 혁신을 위한 표준 수업 모델
           </p>
           <div className="flex justify-center space-x-6 text-sm text-gray-400">
-            <span>© 2024 다채움 플랫폼</span>
+            <span>© 2025 다채움 플랫폼</span>
             <span>•</span>
             <span>충청북도교육청</span>
           </div>

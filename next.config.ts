@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
   },
   // GitHub Pages 배포를 위한 설정
   basePath: process.env.NODE_ENV === 'production' ? '/dacheaum' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/dacheaum/' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/dacheaum' : '',
 };
 
 export default nextConfig;
