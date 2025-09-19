@@ -6,11 +6,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  // GitHub Pages 배포 시에만 basePath 사용
-  ...(process.env.NODE_ENV === 'production' && process.env.GITHUB_ACTIONS && {
-    basePath: '/dacheaum',
-    assetPrefix: '/dacheaum/',
-  }),
+  // GitHub Pages 배포를 위한 설정
+  basePath: process.env.NODE_ENV === 'production' ? '/dacheaum' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/dacheaum/' : '',
 };
 
 export default nextConfig;
