@@ -11,28 +11,28 @@ export default function GallerySection() {
   const galleryImages = [
     {
       id: 1,
-      src: '/exmp/exp1.png',
+      src: './exmp/exp1.png',
       alt: '흥덕고 사례 1',
       title: '흥덕고 교과수업 사례',
       description: '외부 링크를 활용한 교과 수업 사례'
     },
     {
       id: 2,
-      src: '/exmp/exp2.png',
+      src: './exmp/exp2.png',
       alt: '흥덕고 사례 2',
       title: '흥덕고 특별활동 수업 사례',
       description: '학습자료 공유를 활용한 특별활동 수업 사례'
     },
     {
       id: 3,
-      src: '/exmp/exp3.png',
+      src: './exmp/exp3.png',
       alt: '세명고 독서교육 사례',
       title: '세명고 채움책방을 활용한 창의적체험활동 사례',
       description: '채움책방을 활용한 독서교육 후 다양한 활동 사례'
     },
     {
       id: 4,
-      src: '/exmp/exp4.png',
+      src: './exmp/exp4.png',
       alt: '옥천여중 사례',
       title: '옥천여중 채움타자 활용 수업 사례',
       description: '옥천여중 채움타자를 활용한 교과 보조학습 수업 사례'

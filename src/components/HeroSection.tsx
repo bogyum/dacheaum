@@ -11,7 +11,7 @@ export default function HeroSection() {
       transition={{ duration: 0.8 }}
       className="relative py-20 px-4 sm:px-6 lg:px-8 min-h-screen flex items-end pb-48"
       style={{
-        backgroundImage: 'url(/imgfile/IMG_6947.JPG)',
+        backgroundImage: 'url(./imgfile/IMG_6947.JPG)',
         backgroundSize: 'cover',
         backgroundPosition: 'center bottom 20%',
         backgroundRepeat: 'no-repeat'

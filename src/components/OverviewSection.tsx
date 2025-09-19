@@ -63,7 +63,7 @@ export default function OverviewSection() {
           >
             <div className="relative w-full max-w-md">
               <img 
-                src="/imgfile/dacheaum_logo.jpg" 
+                src="./imgfile/dacheaum_logo.jpg" 
                 alt="다채움 로고" 
                 className="w-full h-auto rounded-lg shadow-lg"
               />
