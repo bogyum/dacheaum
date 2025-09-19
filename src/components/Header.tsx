@@ -34,8 +34,8 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-4">
             <div className="flex items-center space-x-6">
               <a href="#overview" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">개요</a>
-              <a href="#gallery" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">갤러리</a>
               <a href="#cases" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">활용 사례</a>
+              <a href="#gallery" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">갤러리</a>
               <a href="#improvements" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">개선 방안</a>
               <a href="#future" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">미래 방향</a>
               <a href="/report(8).pdf" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center">
