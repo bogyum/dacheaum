@@ -49,13 +49,42 @@ export default function OverviewSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
             다채움 플랫폼의 필요성과 배경
           </h2>
-          <div className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto space-y-4">
+        </motion.div>
+
+        {/* 좌우 2분할 레이아웃 */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+          {/* 왼쪽: 로고 이미지 */}
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="flex justify-center lg:justify-start order-2 lg:order-1"
+          >
+            <div className="relative w-full max-w-md">
+              <img 
+                src="/imgfile/dacheaum_logo.jpg" 
+                alt="다채움 로고" 
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+            </div>
+          </motion.div>
+
+          {/* 오른쪽: 텍스트 내용 */}
+          <motion.div 
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+            className="text-lg text-gray-600 dark:text-gray-300 space-y-4 order-1 lg:order-2"
+          >
             <p>
               <strong className="text-gray-900 dark:text-white">2022 개정 교육과정</strong>과 
               <strong className="text-gray-900 dark:text-white"> AI·디지털 전환 시대</strong>에 맞는 
               수업 혁신 요구가 증대되면서, 다음과 같은 필요성이 대두되었습니다:
             </p>
-            <ul className="text-left space-y-2 mt-6">
+            <ul className="space-y-2 mt-6">
               <li className="flex items-start">
                 <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
                 <span><strong>학교 간 활용 격차 해소:</strong> 교육 정보화 수준의 지역별 격차를 줄이고 표준화된 교육 환경 구축</span>
@@ -73,8 +102,8 @@ export default function OverviewSection() {
                 <span><strong>지역 특색 반영:</strong> 각 지역의 특성을 살린 맞춤형 교육 모델 구축</span>
               </li>
             </ul>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {overviewItems.map((item, index) => (
