@@ -11,73 +11,31 @@ export default function GallerySection() {
   const galleryImages = [
     {
       id: 1,
-      src: '/imgfile/IMG_6947.JPG',
-      alt: '다채움 활용 사례 1',
-      title: '수업 모델 적용 사례',
-      description: '실제 수업에서 다채움 플랫폼을 활용한 모습'
+      src: '/exmp/exp1.png',
+      alt: '흥덕고 사례 1',
+      title: '흥덕고 교과수업 사례',
+      description: '외부 링크를 활용한 교과 수업 사례'
     },
     {
       id: 2,
-      src: '/imgfile/IMG_6964.JPG',
-      alt: '다채움 활용 사례 2',
-      title: '학생 참여 활동',
-      description: '학생들이 적극적으로 참여하는 수업 현장'
+      src: '/exmp/exp2.png',
+      alt: '흥덕고 사례 2',
+      title: '흥덕고 특별활동 수업 사례',
+      description: '학습자료 공유를 활용한 특별활동 수업 사례'
     },
     {
       id: 3,
-      src: '/exmp/okcheon_1.png',
-      alt: '옥천 활용 사례 1',
-      title: '옥천 지역 활용 사례',
-      description: '옥천 지역에서의 다채움 플랫폼 활용 모습'
+      src: '/exmp/exp3.png',
+      alt: '세명고 독서교육 사례',
+      title: '세명고 채움책방을 활용한 창의적체험활동 사례',
+      description: '채움책방을 활용한 독서교육 후 다양한 활동 사례'
     },
     {
       id: 4,
-      src: '/exmp/okcheon_2.png',
-      alt: '옥천 활용 사례 2',
-      title: '옥천 수업 현장',
-      description: '옥천 지역 학교에서의 실제 수업 활용'
-    },
-    {
-      id: 5,
-      src: '/exmp/okcheon_3.png',
-      alt: '옥천 활용 사례 3',
-      title: '옥천 학생 참여',
-      description: '옥천 지역 학생들의 적극적인 참여 모습'
-    },
-    {
-      id: 6,
-      src: '/exmp/okcheon_4.png',
-      alt: '옥천 활용 사례 4',
-      title: '옥천 교육 혁신',
-      description: '옥천 지역의 교육 혁신 사례'
-    },
-    {
-      id: 7,
-      src: '/exmp/okcheon_5.png',
-      alt: '옥천 활용 사례 5',
-      title: '옥천 성과 공유',
-      description: '옥천 지역의 성과 공유 및 발표'
-    },
-    {
-      id: 8,
-      src: '/exmp/semeong_1.png',
-      alt: '세명 활용 사례 1',
-      title: '세명 지역 활용',
-      description: '세명 지역에서의 다채움 플랫폼 활용'
-    },
-    {
-      id: 9,
-      src: '/exmp/semeong_2.png',
-      alt: '세명 활용 사례 2',
-      title: '세명 수업 모습',
-      description: '세명 지역 학교의 수업 현장'
-    },
-    {
-      id: 10,
-      src: '/exmp/semeong_3.png',
-      alt: '세명 활용 사례 3',
-      title: '세명 교육 성과',
-      description: '세명 지역의 교육 성과 및 결과'
+      src: '/exmp/exp4.png',
+      alt: '옥천여중 사례',
+      title: '옥천여중 채움타자 활용 수업 사례',
+      description: '옥천여중 채움타자를 활용한 교과 보조학습 수업 사례'
     }
   ];
 

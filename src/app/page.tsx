@@ -16,8 +16,8 @@ export default function Home() {
         <Header />
         <HeroSection />
         <OverviewSection />
-        <GallerySection />
         <SchoolCasesSection />
+        <GallerySection />
         <ImprovementAreasSection />
         <UXImprovementsSection />
         <FutureDirectionSection />
