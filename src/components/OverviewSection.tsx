@@ -82,7 +82,7 @@ export default function OverviewSection() {
             <p>
               <strong className="text-gray-900 dark:text-white">2022 개정 교육과정</strong>과 
               <strong className="text-gray-900 dark:text-white"> AI·디지털 전환 시대</strong>에 맞는 
-              수업 혁신 요구가 증대되면서, 다음과 같은 필요성이 대두되었습니다:
+              수업 혁신 요구 증대
             </p>
             <ul className="space-y-2 mt-6">
               <li className="flex items-start">
